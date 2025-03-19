@@ -1,6 +1,6 @@
 # Sky Torch Lisansı
 
-Telif Hakkı (c) 2024 TheCymaera
+Telif Hakkı (c) 2024 Arda Çırak
 
 İşbu belge ile, bu yazılımın ve ilişkili dokümantasyon dosyalarının ("Sky Torch") bir kopyasını edinen herhangi bir kişiye, aşağıdaki koşullara tabi olmak üzere, yazılımı kullanma izni verilmektedir:
 
