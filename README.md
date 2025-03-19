@@ -1,51 +1,51 @@
-# Sky Torch
-## Introduction
-This plugin was developed for a video:
-[Orbital Laser in Minecraft (Sky Torch)](https://youtu.be/OKXTGbp6AMk)
+# Sky Torch (Gökyüzü Meşalesi)
 
-## Installation
-1. Download the JAR from the [releases page](https://github.com/TheCymaera/minecraft-sky-torch/releases/).
-2. Set up a [Paper](https://papermc.io/downloads) or [Spigot](https://getbukkit.org/download/spigot) server. (Instructions below)
-3. Add the JAR to the `plugins` folder.
-4. Download the world folder from [Planet Minecraft](https://www.planetminecraft.com/project/ambertry-forest/).
-	- This is optional. You can use any world you like.
-5. Place the world folder in the server directory. Name it `world`.
+## Giriş
+Bu eklenti bir YouTube videosu için geliştirilmiştir:
+[Minecraft'ta Yörüngesel Lazer (Sky Torch)](https://youtu.be/OKXTGbp6AMk)
 
-## Running a Server
-1. Download a server JAR from [Paper](https://papermc.io/downloads) or [Spigot](https://getbukkit.org/download/spigot).
-2. Run the following command `java -Xmx1024M -Xms1024M -jar server.jar nogui`.
-3. I typically use the Java runtime bundled with my Minecraft installation so as to avoid version conflicts.
-   - In Modrinth, you can find the Java runtime location inside the profile options menu.
-4. Accept the EULA by changing `eula=false` to `eula=true` in the `eula.txt` file.
-5. Join the server with `localhost` as the IP address.
+## Kurulum
+1. JAR dosyasını [sürümler sayfasından](https://github.com/TheCymaera/minecraft-sky-torch/releases/) indirin.
+2. [Paper](https://papermc.io/downloads) veya [Spigot](https://getbukkit.org/download/spigot) sunucusu kurun. (Talimatlar aşağıda)
+3. İndirdiğiniz JAR dosyasını `plugins` klasörüne ekleyin.
+4. [Planet Minecraft](https://www.planetminecraft.com/project/ambertry-forest/) adresinden dünya dosyasını indirin.
+   - Bu adım isteğe bağlıdır. Dilediğiniz herhangi bir dünyayı kullanabilirsiniz.
+5. İndirdiğiniz dünya klasörünü sunucu dizinine yerleştirin ve adını `world` olarak değiştirin.
 
+## Sunucu Kurulumu
+1. [Paper](https://papermc.io/downloads) veya [Spigot](https://getbukkit.org/download/spigot) adresinden sunucu JAR dosyasını indirin.
+2. Şu komutu çalıştırın: `java -Xmx1024M -Xms1024M -jar server.jar nogui`
+3. Sürüm uyumsuzluklarını önlemek için genellikle Minecraft kurulumunuzla birlikte gelen Java sürümünü kullanmanız önerilir.
+   - Modrinth'te, Java kurulum konumunu profil seçenekleri menüsünde bulabilirsiniz.
+4. `eula.txt` dosyasındaki `eula=false` değerini `eula=true` olarak değiştirerek lisans sözleşmesini kabul edin.
+5. Sunucuya IP adresi olarak `localhost` kullanarak bağlanın.
 
-## Commands
-Autocomplete will show available options.
+## Komutlar
+Otomatik tamamlama mevcut seçenekleri gösterecektir.
 ```
-# Get control items
+# Kontrol öğelerini almak için
 /items
 
-# Load an options preset
+# Hazır ayar yüklemek için
 /preset <preset:enum>
 
-# Reload options (after editing the config file manually)
+# Ayarları yeniden yüklemek için (config dosyasını elle düzenledikten sonra)
 /reload_config
 
-# Change the laser's scale
+# Lazerin ölçeğini değiştirmek için
 /scale <scale:double>
 ```
 
-## Development
-1. Clone or download the repo.
-2. Run Maven `package` to build the plugin. The resulting JAR will be in the `target` folder.
-3. For convenience, set up a symlink and add the link to the server `plugins` folder.
-   - Windows: `mklink /D newFile.jar originalFile.jar`
-   - Mac/Linux: `ln -s originalFile.jar newFile.jar `
+## Geliştirme
+1. Depoyu klonlayın veya indirin.
+2. Eklentiyi derlemek için Maven `package` komutunu çalıştırın. Oluşturulan JAR dosyası `target` klasöründe olacaktır.
+3. Kolaylık için, bir sembolik bağlantı oluşturup bu bağlantıyı sunucunun `plugins` klasörüne ekleyebilirsiniz.
+   - Windows için: `mklink /D yeniDosya.jar orijinalDosya.jar`
+   - Mac/Linux için: `ln -s orijinalDosya.jar yeniDosya.jar`
 
-## License
-You may use the plugin and source code for both commercial or non-commercial purposes.
+## Lisans
+Bu eklentiyi ve kaynak kodunu hem ticari hem de ticari olmayan amaçlarla kullanabilirsiniz.
 
-Attribution is appreciated but not due.
+Kaynak belirtmeniz takdir edilir ancak zorunlu değildir.
 
-Do not resell without making substantial changes.
+Önemli değişiklikler yapmadan yeniden satışı yasaktır.
